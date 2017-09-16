@@ -8,5 +8,8 @@ catch (e) {
 }
 
 if (brand != "Intuit") {
-	plus_2_cart.remove();
+
+	for (var i = 0; i < 2; i++) {
+		plus_2_cart.remove();
+	}
 }
