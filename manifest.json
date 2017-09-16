@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "WannaSave",
+  "description": "This extension allows the user to save money$$$$$$$$$$$$.",
+  "version": "0.1",
+
+  "content_scripts": [
+	  {
+		  "matches": ["http://www.amazon.com/*", "https://www.amazon.com/*"],
+		  "js": ["changebutton.js"]
+	  }
+  ],
+
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}
