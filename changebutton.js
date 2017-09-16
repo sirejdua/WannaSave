@@ -1,5 +1,12 @@
 function wc(str) {
-    return str.split(" ").length;
+    var words = str.split(" ");
+    var count = 0;
+    for (var i = 0; i < words.length; i++) {
+        if (words[i].length > 0) {
+            count += 1;
+        }
+    }
+    return count;
 }
 
 var person = prompt("HECK OFF", "yessir");
