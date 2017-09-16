@@ -1,3 +1,16 @@
+function wc(str) {
+    return str.split(" ").length;
+}
+
+var person = prompt("HECK OFF", "yessir");
+
+words = 0
+
+while (wc(person) < 20) {
+    person = prompt("Unacceptable", "");
+}
+
+
 function delete_buy() {
 	var plus_two_cart_arg = document.getElementsByClassName("a-button-stack");
 	//window.alert(plus_two_cart_arg.length);
@@ -26,11 +39,6 @@ function double_delete() {
 	
 }
 
-var person = prompt("HECK OFF", "yessir");
-
-while (person == null || person == "") {
-    person = prompt("Unacceptable", "")
-}
 
 double_delete();
 
