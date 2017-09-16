@@ -20,5 +20,28 @@ function delete_buy() {
 	}
 }
 
-delete_buy();
-delete_buy();
+function double_delete() {
+	delete_buy();
+	delete_buy();
+	
+}
+
+window.prompt("HECK OFF", "yessir");
+
+double_delete();
+
+var target = document.querySelector('body');
+
+var observer = new MutationObserver(double_delete);
+
+var config = {
+  attributes: true,
+  childList: true,
+  characterData: true
+};
+
+observer.observe(target, config);
+
+double_delete();
+
+
