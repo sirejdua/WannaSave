@@ -1,22 +1,19 @@
+var plus_two_cart_arg = document.getElementsByClassName("a-button-stack");
 try {
-	var plus_2_cart = document.getElementsByClassName("a-button-stack")[0];
-
-	try {
-		var brand = document.getElementById("brand").text.replace(/\s/g,'');
-		if (brand != "Intuit") {
-
-			for (var i = 0; i < 2; i++) {
-				plus_2_cart.remove();
-			}
-		}
-	}
-	catch (e) {
-		for (var i = 0; i < 2; i++) {
-			plus_2_cart.remove();
-		}
-	}
-	
+	var brand = document.getElementById("brand").text.replace(/\s/g,'');
 }
-catch (e) {
-
+catch(err) {
+	var brand = "";
+}
+if (brand != "Intuit") {
+	for (var i = 0; i < plus_two_cart_arg.length; i++) {
+		plus_two_cart_arg[i].remove();
+		try {
+			plus_two_cart_arg[i].remove();
+		}
+		catch(err) {
+			//nop
+		}
+		
+	}
 }
