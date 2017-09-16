@@ -26,7 +26,11 @@ function double_delete() {
 	
 }
 
-window.prompt("HECK OFF", "yessir");
+var person = prompt("HECK OFF", "yessir");
+
+while (person == null || person == "") {
+    person = prompt("Unacceptable", "")
+}
 
 double_delete();
 
